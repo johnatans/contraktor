@@ -1,0 +1,97 @@
+.form {
+  padding: 20px;
+  .description-content {
+    padding: 0 10px 20px;
+    h2 {
+      margin: 0 0 5px;
+      font-size: 20px;
+      color: #222;
+    }
+    p {
+      margin: 0;
+      font-size: 15px;
+      color: #222;
+    }
+  }
+
+  .form-content {
+    .form-row {
+      display: flex;
+      margin-bottom: 20px;
+
+      label {
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        padding: 0 10px;
+
+        input,
+        textarea {
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 15px;
+        }
+
+        input {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .btn-wrapper {
+    padding: 0 10px;
+    .cadaster-btn {
+      background-color: #069;
+      color: #fff;
+      border: 0;
+      padding: 10px 20px;
+      width: 100%;
+      font-size: 20px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #059;
+      }
+      &:disabled {
+        background-color: #ccc;
+      }
+    }
+  }
+  .add-part {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 10px 20px;
+
+    button {
+      background-color: #069;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      font-size: 15px;
+      transition: all 0.3s;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.contract-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 30px;
+
+  width: 100%;
+
+  .contract {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+
+    h1 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+  }
+}
