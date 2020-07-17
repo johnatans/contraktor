@@ -37,8 +37,6 @@ class App extends React.Component {
             <Home />
           </Route>
         </Switch>
-        
-        <Footer />
       </Router>
     )
   };

@@ -12,9 +12,8 @@ const List = () => {
   const [list, setList] = useState([])
 
   const searchEngine = (event) => {
-    console.log('event', event);
     setSearch(event);
-    axios.get(`http://localhost:3001/list?title=${event}`)
+    axios.get(`http://localhost:3001/list${event.length > 3 ? '?title=' + event : ''}`)
       .then(function (response) {
         console.log('response', response.data);
         setList(response.data);
@@ -74,7 +73,7 @@ const List = () => {
       .catch(function (error) {
         console.log(error);
       });
-  });
+  }, []);
 
   return (
     <React.Fragment>
